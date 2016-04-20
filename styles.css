@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "myFont";
+  font-family: "myriadPro";
   src: url(http://www.anaveer.in/honda/font/MYRIADPRO-REGULAR.OTF);
  }
  
@@ -7,7 +7,7 @@ body {
   margin: 0;
  }
 
-.main-container{
+.main-container {
   border-top: 5px solid #FFA500;
   background-color: #FFF;
   display: flex;
@@ -22,38 +22,44 @@ body {
   width: 5px;
   height: 250px;
  }
- 
-div { 
-  display: flex ;
-  margin: 0;
- }
- 
-.mountain-image{
-  background-repeat: repeat-x;
-  background-image: url("/home/natashamartinelli/Documentos/training maquetado/triangle.png");
-  height: 12px;
- }
- 
-.second-container {
-  background-color: #EEEEEE;
+
+.feature-container {
+  background-color: #EEE;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 1cm;
+  padding-top: 50px;
+  flex-wrap: wrap;
+  position: relative;
  }
 
-.element {
+.feature-container::before { 
+  content: " ";
+  background-color: #FFF;
+  background-repeat: repeat-x;
+  background-image: url("triangle.png");
+  height: 12px;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  left: 0;
+ }
+ 
+.feature {
   text-align: center;
   flex-direction: column;
   justify-content: center;
-  align-items:center;
+  align-items: center;
  }
 
-.font {
-  font-size: 100%;
+.feature-title {
+  font-size: 16xp;
   font-family: "MyFont", Sans-Serif;
-  color: #111111;
+  color: #111;
  }
 
-.grey {
-  color: #999999;
+.feature-description {
+  font-size: 14xp;
+  font-family: "myriadPro", Sans-Serif;
+  color: #999;
  }
