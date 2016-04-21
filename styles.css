@@ -2,13 +2,13 @@
   font-family: "myriadPro";
   src: url(http://www.anaveer.in/honda/font/MYRIADPRO-REGULAR.OTF);
  }
-
+ 
 * {
   font-family: "myriadPro", Sans-Serif;
  }
 
-.main-container {
-  border-top: 5px solid #FFA500;
+.main-container{
+  border-top: 5px solid #f5c85f;
   background-color: #FFF;
   display: flex;
   justify-content: center;
@@ -22,13 +22,14 @@
   width: 5px;
   height: 250px;
  }
-
+ 
 .feature-container {
   background-color: #EEE;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding-top: 50px;
+  padding-bottom: 20px;
   flex-wrap: wrap;
   position: relative;
  }
@@ -65,3 +66,43 @@
   padding-top: 5px;
   padding-bottom: 10px;
  }
+
+.shadow-add {
+  position: relative;
+  box-shadow: 10px 5px 10px 10px rgba(0,0,0,0.2);
+ }
+
+.bottom-container {
+  background-color: #f5c85f;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  align-items: center;
+  flex-direction: column;
+ }
+ 
+.footer-title {
+  font-size: 16px;
+  color: #EEE;
+ }
+ 
+.footer-box[type=text] {
+  padding:5px 25px;
+  color: #FFF;
+  width: 250px;
+  height: 30px;
+  margin: 20px;  
+  border-radius: 10px;
+  border: none;
+ }
+
+input#footer-botton { 
+  background: #f5c85f; 
+  border: 1px solid #EEE;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #EEE;
+  border-radius: 10px;
+ }
+
