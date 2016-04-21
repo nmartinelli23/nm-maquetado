@@ -2,9 +2,9 @@
   font-family: "myriadPro";
   src: url(http://www.anaveer.in/honda/font/MYRIADPRO-REGULAR.OTF);
  }
- 
-body {
-  margin: 0;
+
+* {
+  font-family: "myriadPro", Sans-Serif;
  }
 
 .main-container {
@@ -53,13 +53,15 @@ body {
  }
 
 .feature-title {
-  font-size: 16xp;
-  font-family: "MyFont", Sans-Serif;
   color: #111;
+  font-size: 16px;
+  padding-top: 10px;
  }
 
 .feature-description {
-  font-size: 14xp;
-  font-family: "myriadPro", Sans-Serif;
   color: #999;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 10px;
  }
