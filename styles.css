@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "myriadPro";
+  src: url(http://www.anaveer.in/honda/font/MYRIADPRO-REGULAR.OTF);
+ }
+
+* {
+  font-family: "myriadPro", Sans-Serif;
+ }
+
+.main-container {
+  border-top: 5px solid #FFA500;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+ }
+
+.vertical-separator {
+  background: linear-gradient(to top, transparent, orange, transparent);
+  margin: 100px 40px;
+  width: 5px;
+  height: 250px;
+ }
+
+.feature-container {
+  background-color: #EEE;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 50px;
+  flex-wrap: wrap;
+  position: relative;
+ }
+
+.feature-container::before { 
+  content: " ";
+  background-color: #FFF;
+  background-repeat: repeat-x;
+  background-image: url("triangle.png");
+  height: 12px;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  left: 0;
+ }
+ 
+.feature {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+.feature-title {
+  color: #111;
+  font-size: 16px;
+  padding-top: 10px;
+ }
+
+.feature-description {
+  color: #999;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 10px;
+ }
