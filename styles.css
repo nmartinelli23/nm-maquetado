@@ -2,18 +2,21 @@
   font-family: "myriadPro";
   src: url(http://www.anaveer.in/honda/font/MYRIADPRO-REGULAR.OTF);
  }
-
+ 
 * {
   font-family: "myriadPro", Sans-Serif;
+  outline: 0;
  }
 
 .main-container {
-  border-top: 5px solid #FFA500;
+  border-top: 5px solid #f5c85f;
   background-color: #FFF;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  height: calc(100vh - 447px);
+  min-height: 300px;
  }
 
 .vertical-separator {
@@ -22,13 +25,14 @@
   width: 5px;
   height: 250px;
  }
-
+ 
 .feature-container {
   background-color: #EEE;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding-top: 50px;
+  padding-bottom: 20px;
   flex-wrap: wrap;
   position: relative;
  }
@@ -50,6 +54,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 300px;
  }
 
 .feature-title {
@@ -64,4 +69,50 @@
   font-weight: bold;
   padding-top: 5px;
   padding-bottom: 10px;
+ }
+
+.shadow-add {
+  position: relative;
+  box-shadow: 10px 5px 10px 10px rgba(0,0,0,0.2);
+ }
+
+.form-container {
+  background-color: #f5c85f;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  align-items: center;
+  flex-direction: column;
+ }
+ 
+.footer-title {
+  font-size: 16px;
+  color: #EEE;
+ }
+ 
+.footer-box[type=text] {
+  padding: 5px 25px;
+  color: #000;
+  width: 250px;
+  height: 30px;
+  margin-top: 10px;  
+  margin-bottom: 20px;  
+  border-radius: 10px;
+  border: none;
+ }
+
+.footer-botton { 
+  cursor: pointer; 
+  background: #f5c85f; 
+  border: 1px solid #EEE;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #EEE;
+  border-radius: 10px;
+ }
+
+.footer-botton:hover {
+  background: #EEE;
+  color: #f5c85f
  }
